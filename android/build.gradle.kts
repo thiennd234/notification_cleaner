@@ -3,7 +3,6 @@ version = "2.0.0"
 
 plugins {
     id("com.android.library")
-    kotlin("android")
 }
 
 android {
@@ -15,16 +14,18 @@ android {
         targetCompatibility = JavaVersion.VERSION_21
     }
 
-    kotlinOptions {
-        jvmTarget = "21"
-    }
-
     defaultConfig {
         minSdk = 21
     }
 
     lint {
         disable += "InvalidPackage"
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
     }
 }
 
