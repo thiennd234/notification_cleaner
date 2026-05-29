@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 group = "com.example.notification_cleaner"
 version = "2.0.0"
 
@@ -25,7 +27,7 @@ android {
 
 kotlin {
     compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
+        jvmTarget = JvmTarget.fromTarget(JavaVersion.VERSION_21.toString())
     }
 }
 
