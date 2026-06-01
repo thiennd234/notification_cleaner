@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.0.5
+
+* Added Swift Package Manager support (`ios/Package.swift`).
+* Bumped minimum iOS deployment target to 12.0.
+* Removed stale `i386` simulator exclusion.
+* Bumped minimum Flutter SDK to 3.24.0 for SPM-capable toolchain.
+
 ## 0.0.4
 
 * Updated dependencies and optimized code.

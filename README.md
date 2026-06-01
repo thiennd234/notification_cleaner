@@ -22,7 +22,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  notification_cleaner: ^0.0.4
+  notification_cleaner: ^0.0.5
 ```
 
 Then run:
@@ -56,6 +56,8 @@ await Permission.notification.request();
 ### iOS
 
 No additional setup is required.
+
+> This plugin supports Swift Package Manager on Flutter 3.24+ (min iOS 12.0). Older toolchains fall back to CocoaPods automatically.
 
 > ⚠️ Note: iOS has system limitations on managing notifications. Behavior may vary compared to Android.
 
